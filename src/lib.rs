@@ -20,7 +20,7 @@ fn double_second_digits(digits: Vec<u32>) -> Vec<u32> {
 
     for (index, value) in digits.iter().enumerate() {
         if ((index + 1) % 2) != 0 {
-            result.push(value.clone());
+            result.push(*value);
             continue;
         }
 
